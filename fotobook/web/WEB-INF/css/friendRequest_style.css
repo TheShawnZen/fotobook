@@ -1,0 +1,73 @@
+/* Dropdown Button */
+.dropbtn {
+  background-color: darkslateblue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn{
+    position: relative;
+}
+.count{
+    position:absolute;
+    padding:2px 6px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius:100px;
+    background: red;
+    left:50%;
+    top:80%;
+    transform: translateX(-50%);
+    color:white;
+    font-family: "Century Gothic";
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: darkslateblue;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkslateblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: "Century Gothic";
+}
+
+
+
+/* Change color of dropdown links on hover */
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+.friendRequest{
+    width:inherit;
+    display: flex;
+    padding:10px;
+    justify-content: space-between;
+}
+
+.friendRequest:hover{
+    background: #270547;
+}
+.username a{
+    color:whitesmoke;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.choix{
+    
+    font-size: 20px;
+}
+i{
+    font-size: 24px;    
+}

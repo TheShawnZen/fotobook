@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 2, 2020, 4:35:35 AM
+    Author     : maiso
+*/
+
+.btn {
+    position : absolute;
+    font-size: 24px;    
+    text-decoration: none;
+    color:white;
+    background:#3b7587;
+    padding : 12px;
+    border-radius:30px;
+    font-family: "Century Gothic";
+    font-variant: small-caps;
+    transition:0.2s;
+}
+
+.btn:hover{
+    text-decoration: none;
+    background: black;
+}

@@ -1,0 +1,62 @@
+.btn_option{
+    position:absolute; 
+    right:200px; 
+    top:150px;
+    transition:0.5s;
+}
+
+.mahmoud {
+    font-size:34px;
+    color:#808080;
+    transition: 0.3s; 
+}
+
+.mahmoud:hover{
+    color:#595959;
+}
+
+.btn_option .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color:#3b7587;
+  color: rgb(226,226,226);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  margin: 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.btn_option:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media screen and (max-width:1400px){
+    .btn_option{
+        right:180px;
+    }
+}
+@media screen and (max-width:1200px){
+    .btn_option{
+        right:160px;
+    }
+}
+@media screen and (max-width:1024px){
+    .btn_option{
+        right:140px;
+    }
+}
+@media screen and (max-width:900px){
+    .btn_option{
+        right:120px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .btn_option{
+        right:60px;
+    }
+}

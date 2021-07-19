@@ -1,0 +1,26 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+#contenucentre{
+    width: 42%;
+    background-color: #3b7587;
+    border-radius: 30px;
+    padding-bottom: 1%;
+}
+
+#divcentre {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#informations {
+    margin-top:3%;
+    margin-left:2%;
+    text-align:left;
+}
+
+#btnSubmit,#cap,select {
+    color: black;
+}

@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: #3b7587;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    z-index:2;
+}
+
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-links li{
+    list-style:none;
+}
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:16px;
+}
+.fas {
+    color: rgb(226, 226, 226);
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width:25px;
+    height:3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+}
+.friendList h1{
+    font-size: 22px;
+    font-weight: bold;
+    color:rgb(226, 226, 226);
+    margin:20px;
+    text-align: center;
+}
+.friendList h2{
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(226, 226, 226);
+    margin-bottom:15px;
+    margin-top: 25px; 
+    text-align: center;
+}
+.friend-links li{
+    list-style:none;
+    color: rgb(226, 226, 226);
+    font-size:16px;
+    color:#bfbfbf;
+    text-align: center;
+}
+.friend-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size:16px;
+    color:#bfbfbf;
+}
+.friendList{
+    opacity:0;
+    position:fixed;
+    right:0px;
+    height:92vh;
+    top: 8vh;
+    background: #3b7587;
+    display:flex;
+    flex-direction:column;
+    width:20%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index:9;
+}
+.friend-links li{
+    opacity:0;
+}
+.username-link{
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+    
+}
+.choix {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+}
+.friend-active{
+    opacity:1;
+    transform: translateX(0%);
+}
+.username-link a:hover{
+    color:rgb(226,226,226);
+}
+@keyframes friendLinkFade{
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+@media screen and (max-width:1400px){
+    .nav-links{
+        width:45%;
+    }
+}
+@media screen and (max-width:1200px){
+    .nav-links{
+        width:50%;
+    }
+    .friendList{
+        width:25%;
+    }
+}
+@media screen and (max-width:1024px){
+    .nav-links{
+        width:55%;
+    }
+    .friendList{
+        width:30%;
+    }
+}
+@media screen and (max-width:900px){
+    .nav-links{
+        width:60%;
+    }
+    .friendList{
+        width:35%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        opacity:0;
+        position:absolute;
+        right:0px;
+        height:92vh;
+        top: 8vh;
+        background: #3b7587;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width:100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 10;
+    }
+    .nav-links li{
+        opacity:0;
+    }
+    .burger{
+        display:block;
+    }
+    .friendList{
+        width:40%;
+    }
+}
+
+.nav-active{
+    opacity:1;
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+.icone .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.icone .line2{
+    opacity: 0;
+}
+.icone .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
